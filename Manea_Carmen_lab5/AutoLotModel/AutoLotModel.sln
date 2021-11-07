@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotModel", "AutoLotModel\AutoLotModel.csproj", "{3FA0B94D-F681-46B4-A2C1-987FB5E259C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3FA0B94D-F681-46B4-A2C1-987FB5E259C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA0B94D-F681-46B4-A2C1-987FB5E259C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA0B94D-F681-46B4-A2C1-987FB5E259C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA0B94D-F681-46B4-A2C1-987FB5E259C0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A8B0EA5C-B60D-4B5C-B4C7-A1B5EDAEED8D}
+	EndGlobalSection
+EndGlobal
