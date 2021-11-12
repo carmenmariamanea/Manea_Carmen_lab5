@@ -12,13 +12,14 @@
         <CollectionViewSource x:Key="inventoryViewSource" d:DesignSource="{d:DesignInstance {x:Type AutoLotModel:Inventory}, CreateList=True}"/>
     </Window.Resources>
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="49*"/>
             <ColumnDefinition Width="110*"/>
         </Grid.ColumnDefinitions>
         <TabControl x:Name="tbCtrlAutoLot" HorizontalAlignment="Left" Height="334" VerticalAlignment="Top" Width="704" Margin="42,47,0,0" Grid.ColumnSpan="2">
             <TabItem Header="Costumers">
-                <Grid Background="#FFE5E5E5" DataContext="{StaticResource customerViewSource}">
+                <Grid Background="#FFE5E5E5" DataContext="{StaticResource customerViewSource}" Margin="0,-9,-11.6,0.4">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="41*"/>
                         <RowDefinition Height="266*"/>
@@ -107,11 +108,23 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-        <Button x:Name="btnNew" Content="New" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="79,118,0,0"/>
-        <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="79,158,0,0"/>
-        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="79,202,0,0"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="79,334,0,0"/>
-        <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="79,296,0,0"/>
 
+        <GroupBox x:Name="gbOperations" Header="" HorizontalAlignment="Left" Height="91" Margin="87,97,0,234.8" >
+            <StackPanel x:Name="spOperations">
+
+                <Button x:Name="btnAdd" Content="New" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnAdd_Click"/>
+                <Button x:Name="btnEdit" Content="Edit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnEdit_Click"/>
+                <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnDelete_Click" />
+                
+
+            </StackPanel>
+        </GroupBox>
+        <GroupBox x:Name="gbActions" Header="" HorizontalAlignment="Left" Height="91" Margin="87,226,0,105.8" >
+            <StackPanel HorizontalAlignment="Left" Height="48" VerticalAlignment="Top">
+                <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnSave_Click"/>
+                <Button x:Name="btnCancel" Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Click="btnCancel_Click"/>
+
+            </StackPanel>
+        </GroupBox>
     </Grid>
 </Window>
